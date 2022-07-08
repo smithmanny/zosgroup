@@ -124,6 +124,11 @@ const Navigation = () => {
             </div>
             <div className={tw(`hidden md:block`)}>
               <div className={tw(`ml-10 flex items-baseline space-x-4`)}>
+                <h1 className={tw(`font-sans font-bold leading-snug text-gray-800`)}>ZOS Group</h1>
+              </div>
+            </div>
+            {/* <div className={tw(`hidden md:block`)}>
+              <div className={tw(`ml-10 flex items-baseline space-x-4`)}>
                 {links.map((link: Link) => (
                   <a
                     key={link.label}
@@ -134,9 +139,9 @@ const Navigation = () => {
                   </a>
                 ))}
               </div>
-            </div>
+            </div> */}
           </div>
-          <div className={tw(`hidden md:block`)}>
+          {/* <div className={tw(`hidden md:block`)}>
             <div className={tw(`ml-4 flex items-center md:ml-6`)}>
               <Button modifier="border-0 mr-2">Contact sales</Button>
               <Button modifier="border-0 mr-2">Log in</Button>
@@ -145,7 +150,7 @@ const Navigation = () => {
           </div>
           <div className={tw(`-mr-2 flex md:hidden`)}>
             <MenuButton showMenu={showMenu} toggleMenu={toggleMenu} />
-          </div>
+          </div> */}
         </div>
       </div>
       {showMenu ? <MobileMenu /> : null}
